@@ -10,6 +10,7 @@ class Cocoa < Formula
 
   def install
     system "./configure", "--with-cxxflags=-Wno-deprecated-declarations -fPIC" 
+    system "make"
     system "make", "install"
   end
 end
