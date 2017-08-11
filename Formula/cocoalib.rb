@@ -1,4 +1,4 @@
-class Cocoa < Formula
+class Cocoalib < Formula
   desc "CoCoALib is a GPL C++ library for doing Computations in Commutative Algebra."
   homepage "http://cocoa.dima.unige.it/cocoalib/"
   url "http://cocoa.dima.unige.it/cocoalib/tgz/CoCoALib-0.99555.tgz"
