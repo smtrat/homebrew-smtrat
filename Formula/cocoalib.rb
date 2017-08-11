@@ -14,7 +14,7 @@ class Cocoalib < Formula
     system "mkdir", "#{prefix}/lib"
 
     system "./configure", "--threadsafe-hack", "--with-cxxflags=-Wno-deprecated-declarations -fPIC", "--prefix=#{prefix}"
-    system "make", "cocoalib"
+    system "make", "all"
     system "make", "install"
 
     system "mv", "#{prefix}/include/CoCoA-#{version}", "#{prefix}/include/CoCoA"
