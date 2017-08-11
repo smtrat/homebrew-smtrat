@@ -10,7 +10,7 @@ class Cocoa < Formula
 
   def install
     system "./configure", "--threadsafe-hack", "--with-cxxflags=-Wno-deprecated-declarations -fPIC", "--prefix=#{prefix}"
-    system "make"
+    system "make", "library"
     system "make", "install"
   end
 end
