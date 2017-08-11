@@ -16,6 +16,7 @@ class Carl < Formula
   depends_on "cmake"
   depends_on "boost" => ["c++11"]
   depends_on "gmp" => ["c++11"]
+  depends_on "eigen"
   depends_on "cln" if build.with?("cln")
   depends_on "ginac" if build.with?("ginac")
   depends_on "moves-rwth/misc/cocoalib" if build.with?("ginac")
