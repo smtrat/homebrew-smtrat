@@ -32,7 +32,7 @@ class Carl < Formula
 
     mktemp do
       system "cmake", buildpath, *(std_cmake_args + args)
-      system "make", "lib_carl"
+      system "make", "install"
     end
   end
 end
