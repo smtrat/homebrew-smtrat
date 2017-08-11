@@ -10,7 +10,6 @@ class Cocoalib < Formula
 
   def install
     system "mkdir", "#{prefix}/include"
-    system "mkdir", "#{prefix}/bin"
     system "mkdir", "#{prefix}/lib"
 
     system "./configure", "--threadsafe-hack", "--with-cxxflags=-Wno-deprecated-declarations -fPIC", "--prefix=#{prefix}"
