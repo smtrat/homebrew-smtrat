@@ -9,7 +9,7 @@ class Cocoa < Formula
   depends_on "gmp" => ["c++11"]
 
   def install
-    system "./configure", "--with-cxxflags=-Wno-deprecated-declarations -fPIC" 
+    system "./configure", "--with-cxxflags=-Wno-deprecated-declarations -fPIC", "--prefix=#{prefix}"
     system "make"
     system "make", "install"
   end
