@@ -19,7 +19,7 @@ class Carl < Formula
   depends_on "eigen"
   depends_on "cln" if build.with?("cln")
   depends_on "ginac" if build.with?("ginac")
-  depends_on "moves-rwth/misc/cocoalib" if build.with?("ginac")
+  depends_on "moves-rwth/misc/cocoalib" if build.with?("cocoalib")
 
   def install
     args = %w[
