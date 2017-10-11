@@ -9,7 +9,7 @@ class Cocoalib < Formula
   depends_on "gmp" => ["c++11"]
 
   def install
-    // Fix for old version of CoCoALib that refers to tr1 headers.
+    # Fix for old version of CoCoALib that refers to tr1 headers.
     for file in ["Lexer", "Main", "LineProviders"]
         inreplace "src/CoCoa-5/#{file}.C", "boost/tr1/memory.hpp","memory"
     end
