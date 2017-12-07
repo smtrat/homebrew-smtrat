@@ -1,9 +1,9 @@
 class Carl < Formula
   desc "A Computer ARithmetic and Logic library."
   homepage "https://github.com/smtrat/carl"
-  url "https://github.com/smtrat/carl/archive/17.08.zip"
-  version "17.08"
-  sha256 "736a47c91718ea92e1ede84bc47446654ab9a4aa205a70e2c3162406b7f6487b"
+  url "https://github.com/smtrat/carl/archive/17.12.zip"
+  version "17.12"
+  sha256 "4a1394fd21b143a1b4b0620f54b92131c885b6dd0db485687426f14d7af9e492"
 
   head "https://github.com/smtrat/carl.git", :using => :git
 
