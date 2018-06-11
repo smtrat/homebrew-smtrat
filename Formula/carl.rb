@@ -1,9 +1,9 @@
 class Carl < Formula
   desc "Computer ARithmetic and Logic library"
   homepage "https://github.com/smtrat/carl"
-  url "https://github.com/smtrat/carl/archive/17.12.zip"
-  version "17.12"
-  sha256 "4a1394fd21b143a1b4b0620f54b92131c885b6dd0db485687426f14d7af9e492"
+  url "https://github.com/smtrat/carl/archive/18.06.zip"
+  version "18.06"
+  sha256 "3b67e9350bacfdc1da7a786efe3cec479d26ff16f3b20c4f7e260ddef13ae08a"
 
   head "https://github.com/smtrat/carl.git", :using => :git
 
@@ -16,7 +16,7 @@ class Carl < Formula
   depends_on "eigen"
   depends_on "cln" => :optional
   depends_on "ginac" => :optional
-  depends_on "moves-rwth/misc/cocoalib" => :optional
+  depends_on "smtrat/smtrat/cocoalib" => :optional
 
   def install
     args = %w[
