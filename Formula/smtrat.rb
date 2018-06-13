@@ -14,7 +14,7 @@ class Smtrat < Formula
   depends_on "boost"
   depends_on "gmp"
   depends_on "eigen"
-  depends_on "smtrat/smtrat/carl" => :optional
+  depends_on "smtrat/smtrat/carl"
 
   def install
     args = %w[
